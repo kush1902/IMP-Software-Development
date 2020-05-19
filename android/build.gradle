@@ -10,6 +10,12 @@ buildscript {
         classpath 'com.google.gms:google-services:4.3.3'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
+    dependencies {
+        // Example existing classpath
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        // Add the google services classpath
+        classpath 'com.google.gms:google-services:4.3.0'
+    }
 }
 
 allprojects {
