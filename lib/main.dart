@@ -1,12 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:internship_client_side/admin_query.dart';
+import 'CheckboxWidget.dart';
 
-import 'admin_query.dart';
-import 'client_query.dart';
-import 'client_query.dart';
+void main() => runApp(MyApp());
 
-void main() => runApp( new MaterialApp(
-
-  home: QueryAdmin(),
-),
-);
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("checklist"),
+        ),
+        body: SafeArea(
+          child: Center(
+            child: CheckboxWidget(),
+          ),
+        ),
+      ),
+    );
+  }
+}
